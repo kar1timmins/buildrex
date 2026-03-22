@@ -93,7 +93,7 @@ const Layout = ({
       } ${showSolidNav ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-gradient-to-b from-black/40 to-transparent backdrop-blur-sm'}`}>
         <nav className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
           {/* Logo */}
-          <a href="/" className="flex items-center shrink-0" aria-label="Buildrex Construction — Home">
+          <Link href="/" className="flex items-center shrink-0" aria-label="Buildrex Construction — Home">
             <Image
               src="/logo-updated.png"
               alt="Buildrex Construction"
@@ -103,7 +103,7 @@ const Layout = ({
               quality={90}
               className="h-10 w-auto transition-all duration-300"
             />
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
