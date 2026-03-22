@@ -1,8 +1,7 @@
-"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { projects_social_housing_R_L } from "../../common/constants";
 
 export default function TopSection() {

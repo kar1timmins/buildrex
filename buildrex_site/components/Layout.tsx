@@ -101,7 +101,7 @@ const Layout = ({
               height={98}
               priority
               quality={90}
-              className="h-10 w-auto transition-all duration-300"
+              className="h-10 w-auto transition-all duration-300 mix-blend-multiply"
             />
           </Link>
 
