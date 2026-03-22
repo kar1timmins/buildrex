@@ -95,7 +95,7 @@ const Layout = ({
           {/* Logo */}
           <a href="/" className="flex items-center shrink-0" aria-label="Buildrex Construction — Home">
             <Image
-              src="/logo-transparent.png"
+              src="/logo-updated.png"
               alt="Buildrex Construction"
               width={180}
               height={98}

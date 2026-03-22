@@ -5,11 +5,11 @@ export const siteMetadata = {
   defaultTitleTemplate: "%s | Buildrex Construction",
   defaultDescription:
     "Buildrex Construction delivers social housing refurbishments, emergency accommodation fit-outs, and property management services across Ireland.",
-  defaultImage: "/images/hero/background_photo.jpg",
+  defaultImage: "/logo-updated.png",
   phoneNumber: "+353 87 604 6335",
   email: "nathan@buildrex.ie",
   areaServed: "Ireland",
-  logoPath: "/logo-icon-512.png",
+  logoPath: "/logo-updated.png",
   sameAs: [
     "https://ie.linkedin.com/in/nathan-timmins-564a852b1"
   ],

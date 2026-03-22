@@ -89,8 +89,8 @@ const SeoHead = ({
       <meta name="twitter:image" content={metaImage} />
 
       <link rel="icon" href="/favicon.ico" sizes="32x32" />
-      <link rel="icon" type="image/svg+xml" href="/logo-icon.svg" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" href="/logo-updated.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/logo-updated.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
       <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png" />

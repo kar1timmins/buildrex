@@ -2,21 +2,35 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { projects_social_housing_R_L } from "../../common/constants";
 
 export default function TopSection() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const router = useRouter();
 
   return (
     <div className="bg-gray-100 py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 pt-24 sm:pt-32 md:pt-28">
-      <motion.h1
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-6 sm:mb-8 md:mb-12"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        Gallery of Works
-      </motion.h1>
+      <div className="container mx-auto max-w-6xl mb-6 sm:mb-8 md:mb-12">
+        <motion.h1
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Gallery of Works
+        </motion.h1>
+      </div>
+
+      <div className="container mx-auto max-w-6xl">
+        <button
+          type="button"
+          onClick={() => router.push('/projects?category=current#portfolio')}
+          className="mb-6 px-4 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <span aria-hidden="true" className="mr-1">‹</span> Back
+        </button>
+      </div>
 
       <div className="container mx-auto max-w-6xl">
         {projects_social_housing_R_L.map((project, index) => (
