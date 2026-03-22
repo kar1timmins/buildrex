@@ -1,20 +1,22 @@
+# Ensure the root URL serves index.html
+DirectoryIndex index.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
   # Strip trailing slashes (e.g. /about/ -> /about) to prevent serving old directories
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} (.+)/$
-  RewriteRule ^ %1 [R=301,L]
-
-  # Even if a directory exists, redirect trailing slash to non-trailing version
-  # This prevents old deployment directories from being served
+  # But exclude the root URL itself
   RewriteCond %{REQUEST_URI} !^/$
   RewriteCond %{REQUEST_URI} (.+)/$
   RewriteRule ^ %1 [R=301,L]
 
   # If the request is for an existing file, serve it directly
   RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # If the request is for the root directory, let DirectoryIndex handle it
+  RewriteCond %{REQUEST_URI} ^/$
   RewriteRule ^ - [L]
 
   # If a matching .html file exists, serve it (e.g. /contact -> /contact.html)
