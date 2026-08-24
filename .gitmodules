@@ -1,0 +1,3 @@
+[submodule "buildrex-contact-api"]
+	path = buildrex-contact-api
+	url = https://github.com/kar1timmins/buildrex_contact_api.git

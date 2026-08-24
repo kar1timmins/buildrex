@@ -25,13 +25,6 @@
     "**/*.tsx"
   ],
   "exclude": [
-<<<<<<< HEAD
     "node_modules"
-=======
-    "node_modules",
-    "buildrex-contact-api",
-    "foundrex-contact-api",
-    "vercel-api"
->>>>>>> fa8c0f48cf13fc010eb3cfc12538426d49fe0f66
   ]
 }
