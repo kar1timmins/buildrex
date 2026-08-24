@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.buildrex.ie
+
+# Sitemaps
+Sitemap: https://www.buildrex.ie/sitemap.xml
