@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRecaptchaAction, RECAPTCHA_ACTIONS } from "../../utils/recaptcha";
-import { FaBuildingCircleCheck, FaUsers, FaWrench, FaAward } from "react-icons/fa6";
+import { FaBuildingCircleCheck, FaUsers, FaWrench, FaAward, FaBuildingCircleArrowRight } from "react-icons/fa6";
 
 export default function TopSection() {
   const { executeAction } = useRecaptchaAction();
@@ -61,6 +61,11 @@ export default function TopSection() {
             <p className="text-xs md:text-sm text-gray-300">Projects Completed</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <FaBuildingCircleArrowRight className="text-lg md:text-2xl lg:text-3xl text-red-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
+            <h3 className="text-base md:text-xl lg:text-2xl font-bold">113</h3>
+            <p className="text-xs md:text-sm text-gray-300">Apartments in Development</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <FaUsers className="text-lg md:text-2xl lg:text-3xl text-green-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
             <h3 className="text-base md:text-xl lg:text-2xl font-bold">10+</h3>
             <p className="text-xs md:text-sm text-gray-300">Years Experience</p>
@@ -69,11 +74,6 @@ export default function TopSection() {
             <FaAward className="text-lg md:text-2xl lg:text-3xl text-yellow-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
             <h3 className="text-base md:text-xl lg:text-2xl font-bold">100%</h3>
             <p className="text-xs md:text-sm text-gray-300">Quality Assured</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <FaWrench className="text-lg md:text-2xl lg:text-3xl text-red-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
-            <h3 className="text-base md:text-xl lg:text-2xl font-bold">24/7</h3>
-            <p className="text-xs md:text-sm text-gray-300">Support Available</p>
           </div>
         </motion.div>
 

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaBuildingCircleCheck } from "react-icons/fa6";
+import { FaBuildingCircleArrowRight } from "react-icons/fa6";
 import { FaHome, FaUsers, FaTools } from "react-icons/fa";
 
 export default function TopSection() {
@@ -52,15 +52,15 @@ export default function TopSection() {
               Projects Completed
             </p>
           </div>
+          <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <FaBuildingCircleArrowRight className="text-lg md:text-2xl lg:text-3xl text-red-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
+            <h3 className="text-base md:text-xl lg:text-2xl font-bold">113</h3>
+            <p className="text-xs md:text-sm text-gray-300">Apartments under Development</p>
+          </div>
           <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20">
             <FaUsers className="text-lg md:text-2xl lg:text-3xl text-green-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
             <h3 className="text-base md:text-xl lg:text-2xl font-bold">10+</h3>
             <p className="text-xs md:text-sm text-gray-300">Years Experience</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20">
-            <FaBuildingCircleCheck className="text-lg md:text-2xl lg:text-3xl text-yellow-400 mx-auto mb-1 md:mb-2 lg:mb-3" />
-            <h3 className="text-base md:text-xl lg:text-2xl font-bold">24/7</h3>
-            <p className="text-xs md:text-sm text-gray-300">Support Service</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-4 lg:p-6 border border-white/20">
             <FaTools className="text-lg md:text-2xl lg:text-3xl text-red-400 mx-auto mb-1 md:mb-2 lg:mb-3" />

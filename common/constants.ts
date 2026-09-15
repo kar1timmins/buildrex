@@ -633,6 +633,22 @@ export const projects_social_to_commercial = [
         },
         apartmentCount: 9,
       },
+            {
+        property: {
+          src: "/images/cork/blarney_street/360_Blarney_Street.png",
+          alt: "360 Blarney Street property view",
+          name: "360 Blarney Street - Cork",
+        },
+        apartmentCount: 8,
+      },
+            {
+        property: {
+          src: "/images/laois/keegans_pub.jpg",
+          alt: "Laois - Keegans property view",
+          name: "Keegans - Main Street Maryborough - Laois",
+        },
+        apartmentCount: 7,
+      },
     ],
   },
 ];
